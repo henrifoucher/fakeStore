@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/reset.css";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -17,11 +18,12 @@ import "../styles/reset.css";
         />
         <title>Astro</title>
     </head>
+    <Header />
     <main>
-        <slot />
         <body>
             <h1>Astro</h1>
         </body>
+        <slot />
     </main>
 
 

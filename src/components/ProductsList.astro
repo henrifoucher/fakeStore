@@ -1,0 +1,15 @@
+---
+const data = await fetch("https://fakestoreapi.com/products");
+const products = await data.json();
+import ProductCard from "./ProductCard.astro";
+---
+
+<ul>
+    {
+        products.map((product) => (
+            <li>
+                <ProductCard product={product} />
+            </li>
+        ))
+    }
+</ul>
